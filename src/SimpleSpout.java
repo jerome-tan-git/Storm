@@ -43,7 +43,7 @@ public class SimpleSpout extends BaseRichSpout {
 
 	@Override
 	public void open(Map arg0, TopologyContext arg1, SpoutOutputCollector arg2) {
-		this.collector = collector;
+		this.collector = arg2;
 		
 	}
 
